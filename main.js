@@ -1,3 +1,3 @@
-import {fishCollection} from "./FishData.js"
+import {fishCollection} from "./scripts/FishData.js"
 
 console.log (fishCollection)
