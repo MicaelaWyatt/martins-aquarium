@@ -3,17 +3,16 @@ import {useFish} from "./FishData.js"
 
 export const FishList = ()=> {
     // Get a reference to the `<article class="content">` element
-    const contentElement = document.querySelector(".fishList")
     const fishes = useFish();
+
+    const contentElement = document.querySelector(".fishList")
+    
     let fishHTMLRepresentations = "";
-    for(const fish of fishes){
-        finishHTMLRepresentaion += Fish(fish);
+
+    for(const theBestFish of fishes){
+        fishHTMLRepresentations += Fish(theBestFish);
     }
-    console.log("finishhtml",finishHTMLRepresentations)
+    console.log("fishHTMLRepresentaions",fishHTMLRepresentations)
     // Add to the existing HTML in the content element
-    contentElement.innerHTML += fishHTMLRepresentaions;`
-        <article class="fishList">
-            ${fishHTMLRepresentations}
-        </article>
-    `
+    contentElement.innerHTML += fishHTMLRepresentations;
 }
