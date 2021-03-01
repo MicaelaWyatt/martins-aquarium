@@ -24,7 +24,7 @@ export const fishCollection = [
         name: "BigBoss",
         species: "Amber Jack",
         inches: 60,
-        image: "greyfish.jpg"
+        image: "pinkfish.jpg"
      },
 	{
 		saltWater: true,
@@ -96,7 +96,7 @@ export const fishCollection = [
 		name: "Whiskers",
 		species: "Ictalurus furcatus",
 		inches: 39,
-		image: "blueCatfish.jpg"
+		image: "bluefish.jpg"
 	},
 	{ 
         saltWater: true,
@@ -114,7 +114,7 @@ export const fishCollection = [
         name: "Dorothy",
         species: "goldfish",
         inches: 3,
-        img: "bluefish.jpg" },
+        img: "pinkfish.jpg" },
 	{
 		saltWater: false,
 		harvestLocation: "Lake Tahoe",
@@ -140,7 +140,7 @@ export const fishCollection = [
 		name: "Pizza",
 		species: "Tuna",
 		inches: 40,
-		image: "tuna.jpg"
+		image: "pinkfish.jpg"
 	},
 	{
 		saltWater: false,
@@ -183,7 +183,7 @@ export const fishCollection = [
 		harvestLocation: "Atlantic Sea",
 		name: "flipper",
 		inches: 12,
-		image: "orangefish.jpg",
+		image: "pinkfish.jpg",
 		diet: "worms",
 		species: "garibaldi"
 	},
@@ -239,7 +239,7 @@ export const fishCollection = [
         name: "bluefin tuna",
         species: "Thunnus thynnus",
         inches: 84,
-        image: "bluefin.jpg" 
+        image: "bluefish.jpg" 
     },
 	{
 		saltwater: true,
@@ -254,4 +254,41 @@ export const fishCollection = [
 
 export const useFish = () => {
     return fishCollection
+}
+
+export const getMostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    const holyFishArray = []
+
+    for (const fishObj of fishCollection) {
+        if(fishObj.inches % 3 === 0){
+        holyFishArray.push(fishObj)
+    }
+}
+
+    return holyFishArray
+}
+
+export const getSoldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+    const soldierArray =[];
+    for(const fishObj of fishCollection){
+        if(fishObj.inches % 5 === 0 &&fishObj.inches % 3 !== 0){
+            soldierArray.push(fishObj);
+        }
+    }
+    console.log('soldierArray', soldierArray)
+    return soldiersArray
+}
+
+export const getUnworthy = () => {
+    // Any fish not a multiple of 3 or 5
+    const unworthyArray=[];
+    for (const fishObj of fishCollection){
+        if(fishObj.inches % 5 !== 0 && fishObj.inches % 3 !== 0){
+
+        }
+    }
+    console.log("unworthyArray" unworthyArray)
+    return unworthyArray
 }

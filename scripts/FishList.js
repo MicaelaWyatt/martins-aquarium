@@ -1,10 +1,16 @@
 import { Fish } from "./Fish.js";
-import {useFish} from "./FishData.js"
+import {useFish, getMostHolyFish, getUnworthy, getUnworthy, getSoldierFish} from "./FishData.js"
 
 export const FishList = ()=> {
     // Get a reference to the `<article class="content">` element
     const fishes = useFish();
+    // const holyFish = getMostHolyFish();
+    // const soldierFish = getSoldierFish();
+    // const unWorthyFish = getUnworthy();
 
+    const allFishes = holyFish.concat(soldierFish, unWorthyFish)
+
+// useFish will return the whole list of fish
     const contentElement = document.querySelector(".fishList")
     
     let fishHTMLRepresentations = "";
