@@ -239,7 +239,7 @@ export const fishCollection = [
         name: "bluefin tuna",
         species: "Thunnus thynnus",
         inches: 84,
-        image: bluefin.pg 
+        image: "bluefin.jpg" 
     },
 	{
 		saltwater: true,
@@ -251,3 +251,6 @@ export const fishCollection = [
 		image: "bluefish.jpg"
 	}
 ];
+export const useFish = ()=>{
+    return fishCollection;
+}

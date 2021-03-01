@@ -1,4 +1,4 @@
-import {fishCollection, useFish } from "./FishData.js";
+import {fishCollection, useFish } from "./scripts/FishData.js";
 import {FishList} from "./FishList.js";
 
 

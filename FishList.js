@@ -1,6 +1,6 @@
 import { Fish } from "./Fish.js";
-import {useFish, getMostHolyFish, getUnworthy, getUnworthy, getSoldierFish} from "./FishData.js"
-
+import {useFish} from "./scripts/FishData.js"
+// getMostHolyFish, getUnworthy, getSoldierFish
 export const FishList = ()=> {
     // Get a reference to the `<article class="content">` element
     const fishes = useFish();
@@ -8,7 +8,7 @@ export const FishList = ()=> {
     // const soldierFish = getSoldierFish();
     // const unWorthyFish = getUnworthy();
 
-    const allFishes = holyFish.concat(soldierFish, unWorthyFish)
+    // const allFishes = holyFish.concat(soldierFish, unWorthyFish)
 
 // useFish will return the whole list of fish
     const contentElement = document.querySelector(".fishList")
@@ -24,16 +24,16 @@ export const FishList = ()=> {
 }
 
 
-const addFishToDom = () =>{
-    const contentElement = document.querySelector(".fishList")
+// const addFishToDom = () =>{
+    // const contentElement = document.querySelector(".fishList")
     
-    let fishHTMLRepresentations = "";
+    // let fishHTMLRepresentations = "";
 
-    for(const theBestFish of fishes){
-        fishHTMLRepresentations += Fish(theBestFish);
-    }
-    console.log("fishHTMLRepresentaions",fishHTMLRepresentations)
+    // for(const theBestFish of fishes){
+        // fishHTMLRepresentations += Fish(theBestFish);
+    // }
+    // console.log("fishHTMLRepresentaions",fishHTMLRepresentations)
     // Add to the existing HTML in the content element
-    contentElement.innerHTML += fishHTMLRepresentations;
+    // contentElement.innerHTML += fishHTMLRepresentations;
 
-}
+// }
