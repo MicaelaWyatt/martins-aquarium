@@ -1,4 +1,7 @@
-console.log(hey girl)
-import {fishCollection} from "./scripts/FishData.js"
+import {fishCollection, useFish } from "./FishData.js";
+import {FishList} from "./FishList.js";
 
-console.log (fishCollection)
+
+const allTheFish = useFish()
+
+FishList();
