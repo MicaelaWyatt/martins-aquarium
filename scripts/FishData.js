@@ -24,7 +24,7 @@ export const fishCollection = [
         name: "BigBoss",
         species: "Amber Jack",
         inches: 60,
-        image: "greyfish.jpg"
+        image: "pinkfish.jpg"
      },
 	{
 		saltWater: true,
@@ -96,7 +96,7 @@ export const fishCollection = [
 		name: "Whiskers",
 		species: "Ictalurus furcatus",
 		inches: 39,
-		image: "blueCatfish.jpg"
+		image: "bluefish.jpg"
 	},
 	{ 
         saltWater: true,
@@ -114,7 +114,8 @@ export const fishCollection = [
         name: "Dorothy",
         species: "goldfish",
         inches: 3,
-        img: "bluefish.jpg" },
+        image: "bluefish.jpg"
+    },
 	{
 		saltWater: false,
 		harvestLocation: "Lake Tahoe",
@@ -140,7 +141,7 @@ export const fishCollection = [
 		name: "Pizza",
 		species: "Tuna",
 		inches: 40,
-		image: "tuna.jpg"
+		image: "pinkfish.jpg"
 	},
 	{
 		saltWater: false,
@@ -149,7 +150,7 @@ export const fishCollection = [
 		name: "Finn",
 		species: "Bass",
 		inches: 20,
-		image: "bluefish.jpeg",
+		image: "bluefish.jpg",
 	},
 	{
 		saltWater: true,
@@ -183,7 +184,7 @@ export const fishCollection = [
 		harvestLocation: "Atlantic Sea",
 		name: "flipper",
 		inches: 12,
-		image: "orangefish.jpg",
+		image: "pinkfish.jpg",
 		diet: "worms",
 		species: "garibaldi"
 	},
@@ -239,7 +240,7 @@ export const fishCollection = [
         name: "bluefin tuna",
         species: "Thunnus thynnus",
         inches: 84,
-        image: "bluefin.jpg" 
+        image: "bluefish.jpg" 
     },
 	{
 		saltwater: true,
