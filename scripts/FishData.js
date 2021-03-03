@@ -289,6 +289,6 @@ export const getUnworthy = () => {
 
         }
     }
-    console.log("unworthyArray" unworthyArray)
+    console.log("unworthyArray", unworthyArray)
     return unworthyArray
 }
