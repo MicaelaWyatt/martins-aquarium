@@ -114,7 +114,7 @@ export const fishCollection = [
         name: "Dorothy",
         species: "goldfish",
         inches: 3,
-        img: "pinkfish.jpg" },
+        image: "pinkfish.jpg" },
 	{
 		saltWater: false,
 		harvestLocation: "Lake Tahoe",
