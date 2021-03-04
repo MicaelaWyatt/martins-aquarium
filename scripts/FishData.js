@@ -278,7 +278,7 @@ export const getSoldierFish = () => {
         }
     }
     console.log('soldierArray', soldierArray)
-    return soldiersArray;
+    return soldierArray;
 }
 
 export const getUnworthy = () => {
