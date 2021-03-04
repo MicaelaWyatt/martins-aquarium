@@ -114,8 +114,7 @@ export const fishCollection = [
         name: "Dorothy",
         species: "goldfish",
         inches: 3,
-        image: "bluefish.jpg"
-    },
+        img: "pinkfish.jpg" },
 	{
 		saltWater: false,
 		harvestLocation: "Lake Tahoe",
@@ -252,17 +251,19 @@ export const fishCollection = [
 		image: "bluefish.jpg"
 	}
 ];
-export const useFish = ()=>{
+
+export const useFish = () => {
     return fishCollection;
 }
 
 export const getMostHolyFish = () => {
-    const holyFishArray =[]
-    for (const fishObj of fishCollection){
+  const holyFishArray = [];
+  for (const fishObj of fishCollection) {
         if(fishObj.inches % 3 === 0){
-            holyFishArray.push(fishObj)
-        }
+        holyFishArray.push(fishObj);
     }
+}
+
     return holyFishArray;
 }
 
@@ -271,7 +272,7 @@ export const getSoldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
     const soldierArray =[];
     for(const fishObj of fishCollection){
-        if(fishObj.inches % 5 === 0 ){
+        if(fishObj.inches % 5 === 0){
             soldierArray.push(fishObj);
         }
     }
@@ -284,9 +285,9 @@ export const getUnworthy = () => {
     const unworthyArray=[];
     for (const fishObj of fishCollection){
         if(fishObj.inches % 5 !== 0 && fishObj.inches % 3 !== 0){
-            unworthyArray.push(fishObj);
+          unworthyArray.push(fishObj);
         }
     }
-    console.log("unworthyArray")
-    return unworthyArray;
+    console.log("unworthyArray", unworthyArray)
+    return unworthyArray
 }
