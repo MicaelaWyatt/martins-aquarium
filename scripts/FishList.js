@@ -1,5 +1,5 @@
-import { Fish } from "./Fish.js";
-import {useFish, getMostHolyFish, getUnworthy, getSoldierFish} from "./FishData.js"
+import { Fish } from "./scripts/Fish.js";
+import {useFish, getMostHolyFish, getUnworthy, getSoldierFish} from "./scripts/FishData.js"
 
 export const FishList = ()=> {
     // Get a reference to the `<article class="content">` element
