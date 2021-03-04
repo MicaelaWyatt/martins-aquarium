@@ -257,17 +257,16 @@ export const useFish = () => {
 }
 
 export const getMostHolyFish = () => {
-    // 3, 6, 9, 12, etc... fish
-    const holyFishArray = []
-
-    for (const fishObj of fishCollection) {
+  const holyFishArray = [];
+  for (const fishObj of fishCollection) {
         if(fishObj.inches % 3 === 0){
-        holyFishArray.push(fishObj)
+        holyFishArray.push(fishObj);
     }
 }
 
     return holyFishArray;
 }
+
 
 export const getSoldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
@@ -286,7 +285,7 @@ export const getUnworthy = () => {
     const unworthyArray=[];
     for (const fishObj of fishCollection){
         if(fishObj.inches % 5 !== 0 && fishObj.inches % 3 !== 0){
-
+          unworthyArray.push(fishObj);
         }
     }
     console.log("unworthyArray", unworthyArray)
