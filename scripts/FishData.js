@@ -253,7 +253,7 @@ export const fishCollection = [
 ];
 
 export const useFish = () => {
-    return fishCollection
+    return fishCollection;
 }
 
 export const getMostHolyFish = () => {
@@ -273,7 +273,7 @@ export const getSoldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
     const soldierArray =[];
     for(const fishObj of fishCollection){
-        if(fishObj.inches % 5 === 0 &&fishObj.inches % 3 !== 0){
+        if(fishObj.inches % 5 === 0){
             soldierArray.push(fishObj);
         }
     }
