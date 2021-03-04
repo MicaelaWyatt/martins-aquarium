@@ -266,7 +266,7 @@ export const getMostHolyFish = () => {
     }
 }
 
-    return holyFishArray
+    return holyFishArray;
 }
 
 export const getSoldierFish = () => {
@@ -278,7 +278,7 @@ export const getSoldierFish = () => {
         }
     }
     console.log('soldierArray', soldierArray)
-    return soldiersArray
+    return soldiersArray;
 }
 
 export const getUnworthy = () => {
