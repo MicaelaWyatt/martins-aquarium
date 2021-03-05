@@ -3,11 +3,14 @@ import {useFish, getMostHolyFish, getSoldierFish, getUnworthy} from "./FishData.
 // getMostHolyFish, getUnworthy, getSoldierFish
 export const FishList = ()=> {
     // Get a reference to the `<article class="content">` element
+    const holyFish = getMostHolyFish();
+    const soldierFish = getSoldierFish();
+    const unworthyFish = getUnworthy();
     // const fishes = useFish();
     // const fishes = getMostHolyFish();
     // const fishes = getSoldierFish();
-    const fishes = getUnworthy();
-
+    // const fishes = getUnworthy();
+const fishes = holyFish.concat(soldierFish,unworthyFish);
     // I cant figure this one out
     // const allFishes = holyFishArray.concat(soldierFishArray, unWorthyFishArray)
 

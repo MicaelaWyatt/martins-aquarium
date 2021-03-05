@@ -66,7 +66,7 @@ export const fishCollection = [
 		saltWater: true,
 		harvestLocation: "Atlantic Ocean",
 		diet: "Plankton",
-		fishName: "Nemo",
+		name: "Nemo",
 		species: "Clownfish",
 		inches: 4,
 		image: "bluefish.jpg"
@@ -158,7 +158,7 @@ export const fishCollection = [
 		name: "Simba",
 		species: "lionfish",
 		harvestLocation: "Red Sea",
-		Inches: 10,
+		inches: 10,
 		image: "bluefish.jpg"
 	},
 	{
