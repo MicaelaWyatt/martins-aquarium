@@ -1,0 +1,11 @@
+{
+    "fish":[
+    "saltWater": true,
+    "harvestLocation": "Atlantic, Pacific, and southern sea",
+    "diet": "smaller fish",
+    "name": "goldfish",
+    "species": "Thunnus thynnus",
+    "inches": 12,
+    "image": "bluefish.jpg" 
+    ]
+}
